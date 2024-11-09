@@ -75,3 +75,11 @@ h1 {
 #restartBtn:hover {
   background-color: #45a049;
 }
+
+h2 {
+  font-size: 12px;  
+  text-align: right;  
+  margin-top: 10px;  
+  color: #888;  /* light colour text sati */
+  font-style: italic; 
+}
