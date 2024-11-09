@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlighting with Read-Aloud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Type and Highlight Text</h1>
+        <textarea id="inputText" class="input-box" placeholder="Paste or type your text here..."></textarea>
+
+        <div class="slider-container">
+            <label for="speedSlider">Speed: </label>
+            <input type="range" id="speedSlider" min="500" max="5000" value="1500">
+            <span id="speedValue">1500ms</span>
+        </div>
+        
+        <!-- Button container for horizontal alignment -->
+        <div class="button-container">
+            <button id="pauseResumeBtn">Pause</button>
+            <button id="restartBtn">Restart</button>
+            <button id="toggleSpeechBtn">Turn Speech On</button> <!-- New Button for Toggle Speech -->
+        </div>
+
+        <label for="languageSelector">Select Language: </label>
+        <select id="languageSelector">
+            <option value="en-US">English</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="mr-IN">Marathi</option>
+        </select>
+
+        <div id="outputText" class="output-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
